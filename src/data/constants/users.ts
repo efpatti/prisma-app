@@ -35,6 +35,8 @@ const users: User[] = [
   id: "6",
   email: "pollyana@gmail.com",
   name: "Pollyana",
-  password: "pollyana123",
+  password: "pollyana123 ",
  },
 ];
+
+export default users;
