@@ -4,7 +4,7 @@ import { User } from "@/core/model/User";
 
 export default function UsersList() {
  return (
-  <div className="flex flex-col gap-4">
+  <div className="flex flex-col gap-4 w-full">
    {users.map((user: User) => (
     <LineUser key={user.id} user={user} />
    ))}

@@ -8,18 +8,18 @@ export interface LineUserProps {
 
 export default function LineUser({ user }: LineUserProps) {
  return (
-  <div className="flex items-center gap-3 p-4 bg-zinc-900 rounded-lg">
+  <div className="flex items-center gap-4 p-4 bg-zinc-900 rounded-lg">
    <Image
     src="https://cultivatedculture.com/wp-content/uploads/2019/12/Austin-Portrait-Taken-By-Professional-Photographer.png"
-    width={50}
-    height={50}
+    width={80}
+    height={80}
     alt="User Avatar"
-    className="w-12 h-12 rounded-full object-cover"
+    className="w-20 h-20 rounded-full object-cover"
     loader={({ src }) => src} // Allows loading external URLs
    />
    <div className="flex flex-col">
-    <span className="text-white font-medium">{user.name}</span>
-    <span className="text-sm text-zinc-400">{user.email}</span>
+    <span className="text-white text-2xl font-medium">{user.name}</span>
+    <span className="text-lg text-zinc-400">{user.email}</span>
    </div>
   </div>
  );
